@@ -88,7 +88,7 @@ const List = () => {
                 <Link to='/'><img src={mainImg} alt='먐몸미' width='50' height='50'/></Link>
             </h3>
 
-            <table border='1' frame='hsides' role='rows'>
+            <table border='1' frame='hsides'>
                 <thead>
                     <tr>
                         <th>이름</th>

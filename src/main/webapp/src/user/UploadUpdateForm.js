@@ -43,16 +43,13 @@ const UploadUpdateForm = () => {
         e.preventDefault()
 
         var formData = new FormData()
-        {/* 
-            formData.append() 사용하여 FormData에 데이터를 추가하는데, 
-            new Blob([JSON.stringify(userUploadDTO)], {type: 'application/json}) 부분은
-            JSON 데이터를 Blod 객체로 변환하여 FormData에 추가하는 것을 나타낸다
 
-            [JSON.stringify(userUploadDTO)는 javascript 객체인 DTO를 Json 문자열로 변환한다.
-            이렇게 하면 객체의 속성과 값을 JSON 형식으로 표현할 수 있다.
+            // formData.append() 사용하여 FormData에 데이터를 추가하는데, 
+            // new Blob([JSON.stringify(userUploadDTO)], {type: 'application/json}) 부분은
+            // JSON 데이터를 Blod 객체로 변환하여 FormData에 추가하는 것을 나타낸다
 
-            ])  
-        */}
+            // [JSON.stringify(userUploadDTO)는 javascript 객체인 DTO를 Json 문자열로 변환한다.
+            // 이렇게 하면 객체의 속성과 값을 JSON 형식으로 표현할 수 있다.
 
         formData.append("seq",seq)
          

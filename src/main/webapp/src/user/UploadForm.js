@@ -38,7 +38,7 @@ const UploadForm = () => {
         const files = Array.from(e.target.files)
         var imgArray = []
 
-        files.map((item, index) => {
+        files.forEach((item, index) => {
             const objectURL = URL.createObjectURL(item)
             imgArray.push(objectURL)
         })
