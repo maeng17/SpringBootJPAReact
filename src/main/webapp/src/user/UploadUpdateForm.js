@@ -107,7 +107,7 @@ const UploadUpdateForm = () => {
                         <td colSpan="2">
                             <span id="showImgList">
                                 {
-                                    <img src={`https://kr.object.ncloudstorage.com/bitcamp-6th-bucket-108/storage/${userUploadDTO.imageFileName}`} width="70" height="70"/>
+                                    <img src={`https://kr.object.ncloudstorage.com/bitcamp-6th-bucket-108/storage/${userUploadDTO.imageFileName}`} width="70" height="70" alt='aaaa'/>
                                 }
                             </span>
                             <img src={cameraImg} id="camera" alt="카메라" width="50" height="50" onClick={onCamera} />
