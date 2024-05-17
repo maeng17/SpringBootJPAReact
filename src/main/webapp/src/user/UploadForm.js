@@ -14,7 +14,8 @@ const UploadForm = () => {
         imageFileName: '',
         imageOriginalName: '',
     })
-    const { imageName, imageContent, imageFileName, imageOriginalName } = userUploadDTO
+    // const { imageName, imageContent, imageFileName, imageOriginalName } = userUploadDTO
+    const { imageName, imageContent } = userUploadDTO
 
     const [imgList, setImgList] = useState([])
     const [files, setFiles] = useState('')
@@ -114,7 +115,8 @@ const UploadForm = () => {
                                         //선택한 이미지를 미리보기
                                         imgList.map((item, index) => <img key={ index }
                                                                           src={ item }
-                                                                          style={{ width: '70px', height: '70px' }}/>) 
+                                                                          style={{ width: '70px', height: '70px' }}
+                                                                          alt={ item }/>) 
                                     }
                                 </span>
 

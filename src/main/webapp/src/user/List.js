@@ -52,7 +52,7 @@ const List = () => {
     
                 })
                 .catch(error => console.log(error))
-    }, [page, searChList])
+    }, [page, searChList, columnName, value])
 
     const onSearchListBtn = (e) => {
         e.preventDefault()

@@ -14,7 +14,8 @@ const UploadUpdateForm = () => {
         imageFileName : '',
         imageOriginalName : ''
     })
-    const [files, setFiles] = useState([])
+    //const [files, setFiles] = useState([])
+    const [ files ] = useState([])
     const imgRef = useRef()
     const navigate = useNavigate();
     
@@ -25,7 +26,7 @@ const UploadUpdateForm = () => {
                 setUserUploadDTO(res.data)
             })
             .catch()
-    },[])
+    },[seq])
 
     const onCamera = () => {
         imgRef.current.click()

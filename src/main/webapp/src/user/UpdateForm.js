@@ -39,7 +39,7 @@ const UpdateForm = () => {
         .then(res => setUserDTO(res.data))
         .catch(error => console.log(error))
 
-    }, [reset])
+    }, [reset, id])
 
     const onUpdateSubmit = (e) => {
         e.preventDefault()
